@@ -55,4 +55,3 @@ python index.py
 ```
 
 Output akan menampilkan daftar alamat wallet dan private key yang dihasilkan.
-```
