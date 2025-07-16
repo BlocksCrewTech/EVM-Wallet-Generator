@@ -29,7 +29,8 @@ def mass_generate_mnemonics(num_mnemonics):
 def save_keys_to_file(mnemonic_keypairs, filename):
     with open(filename, 'w') as f:
         for mnemonic_phrase, private_key, public_key in mnemonic_keypairs:
-            f.write(f"address: {public_key}\nprivateKey: {private_key}\nmnemonic: {mnemonic_phrase}\n {"-" * 62}\n")
+            # FIX: Changed double quotes to single quotes inside the expression
+            f.write(f"address: {public_key}\nprivateKey: {private_key}\nmnemonic: {mnemonic_phrase}\n{'-' * 62}\n")
 
 def main():
     # Input the number of mnemonics to generate
